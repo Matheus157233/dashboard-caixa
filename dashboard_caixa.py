@@ -1,8 +1,3 @@
-"""
-Dashboard de Caixa — Streamlit + Google Sheets + Login por cliente
-Cada cliente tem usuário/senha próprios e vê apenas sua planilha.
-"""
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -19,13 +14,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ══════════════════════════════════════════════════════════════════════════════
-#  CLIENTES — edite aqui para adicionar/remover clientes
-#  Formato: "usuario": { "senha_hash": hash_sha256, "nome": str, "sheet_url": str }
-#
-#  Para gerar o hash de uma senha, use:
-#     python -c "import hashlib; print(hashlib.sha256('SUA_SENHA'.encode()).hexdigest())"
-# ══════════════════════════════════════════════════════════════════════════════
 def _h(s): return hashlib.sha256(s.encode()).hexdigest()
 
 CLIENTES = {
@@ -35,13 +23,7 @@ CLIENTES = {
         "sheet_url": "https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgVE2upms/export?format=csv&gid=0",
         "cor": "#2563eb",
     },
-    # ── Adicione seus clientes reais abaixo ───────────────────────────────────
-    # "loja_silva": {
-    #     "senha_hash": _h("senha_do_cliente"),
-    #     "nome": "Loja Silva & Filhos",
-    #     "sheet_url": "https://docs.google.com/spreadsheets/d/ID_DA_PLANILHA_DELES/export?format=csv&gid=0",
-    #     "cor": "#16a34a",
-    # },
+   
 }
 
 # ─── CSS ──────────────────────────────────────────────────────────────────────
