@@ -120,7 +120,7 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
     st.session_state.usuario   = ""
 
-inject_css()   # CSS básico para o login
+inject_css()   
 
 if not st.session_state.logged_in:
     st.markdown("""
@@ -131,7 +131,7 @@ if not st.session_state.logged_in:
     </div>
     """, unsafe_allow_html=True)
 
-    # Centraliza o formulário
+    
     col_l, col_c, col_r = st.columns([1, 1.4, 1])
     with col_c:
         st.markdown("<div style='height:20px'></div>", unsafe_allow_html=True)
@@ -208,7 +208,7 @@ with st.sidebar:
 
 # ─── Carrega dados ────────────────────────────────────────────────────────────
 try:
-    ts     = int(time.time() // 5)   # muda a cada 5s para forçar recache
+    ts     = int(time.time() // 5)   
     df_all = load_data(cliente["sheet_url"], ts)
 except Exception as e:
     st.error("**Erro ao carregar a planilha.**\n\n"
