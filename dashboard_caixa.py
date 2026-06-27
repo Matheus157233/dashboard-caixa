@@ -1,8 +1,3 @@
-"""
-Dashboard de Caixa — Streamlit + Google Sheets
-Lê dados públicos de uma planilha Google Sheets em tempo real.
-"""
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -20,7 +15,7 @@ st.set_page_config(
 )
 
 # ⚠️  Troque pela URL da SUA planilha (veja README)
-SHEET_URL = "https://docs.google.com/spreadsheets/d/SEU_ID_AQUI/export?format=csv&gid=0"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/14EZ1Rh6OIs7fnlMLUV-BRURRQiMDJ2cVEWCPtTIpy50/export?format=csv&gid=0"
 
 # ─── CSS ──────────────────────────────────────────────────────────────────────
 st.markdown("""
