@@ -26,8 +26,6 @@ CLIENTES = {
    
 }
 
-def import("sheet_url": "https://docs.google.com/spreadsheets/d/14EZ1Rh6OIs7fnlMLUV-BRURRQiMDJ2cVEWCPtTIpy50/export?format=csv&gid=0",)
-
 
 # ─── CSS ──────────────────────────────────────────────────────────────────────
 def inject_css(cor_cliente: str = "#2563eb"):
