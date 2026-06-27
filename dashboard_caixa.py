@@ -21,7 +21,7 @@ CLIENTES = {
     "demo": {
         "senha_hash": _h("demo123"),
         "nome": "Empresa Demo",
-        "sheet_url": "https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgVE2upms/export?format=csv&gid=0",
+        "sheet_url": "https://docs.google.com/spreadsheets/d/14EZ1Rh6OIs7fnlMLUV-BRURRQiMDJ2cVEWCPtTIpy50/export?format=csv&gid=0",
         "cor": "#2563eb",
     },
     # ── Adicionar clientes reais abaixo ───────────────────────────────────
