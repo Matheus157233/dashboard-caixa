@@ -22,7 +22,7 @@ CLIENTES = {
     },
     "demo_pro": {
         "senha_hash": _h("demo456"), "nome": "Empresa Demo Pro",
-        "sheet_url": "https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgVE2upms/export?format=csv&gid=0",
+        "sheet_url": "https://docs.google.com/spreadsheets/d/14EZ1Rh6OIs7fnlMLUV-BRURRQiMDJ2cVEWCPtTIpy50/export?format=csv&gid=0",
         "cor": "#16a34a", "plano": "profissional", "meta_mensal": 0,
     },
     "demo_emp": {
